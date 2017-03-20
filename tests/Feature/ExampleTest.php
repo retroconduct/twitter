@@ -14,9 +14,23 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicTest()
+    public function testFormView()
     {
         $response = $this->get('/');
+
+        $response->assertStatus(200);
+    }
+
+    public function testValidTwitterHandle()
+    {
+        $response = $this->json('POST', '/', ['handle' => 'Gollum']);
+
+        $response->assertStatus(200);
+    }
+
+    public function testInvalidTwitterHandle()
+    {
+        $response = $this->json('POST', '/', ['handle' => '!']);
 
         $response->assertStatus(200);
     }
