@@ -3,7 +3,7 @@ Please install the prerequisites to support a Laravel 5.4 and set proper permiss
 
 ## Usage
 
-### Create Twitter Dev Account and Generate your keys
+### Create Twitter Dev Account and Generate your keys and then add them to your .env file
 
 	TWITTER_CONSUMER_KEY = YOUR_KEY
 	TWITTER_CONSUMER_SECRET = YOUR_SECRET
