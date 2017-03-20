@@ -26,7 +26,10 @@ server {
     }
 }
 ```
-### Run composer.phar install to install all the dependencies
+### Run the following command to install all the dependencies
+```
+composer.phar install
+```
 
 ### Create Twitter Dev Account and Generate your keys and then add them to your .env file
 ```
